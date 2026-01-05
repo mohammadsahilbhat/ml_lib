@@ -19,16 +19,7 @@ env/
 .DS_Store
 Thumbs.db
 
-# ===============================
-# DATA FILES (GLOBAL)
-# ===============================
-*.csv
-*.tsv
-*.xlsx
-*.npy
-*.npz
-*.pkl
-*.joblib
+
 
 # ===============================
 # Model Artifacts
