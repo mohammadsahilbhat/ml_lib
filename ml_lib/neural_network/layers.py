@@ -35,7 +35,7 @@ class Dense(Layer):
             d_out = self.activation.backward(d_out)
 
         if d_out.ndim == 1:
-            d_out = d_out.reshape(-1, 1)  # 🔥 ensure 2D gradient
+            d_out = d_out.reshape(-1, 1)  #  ensure 2D gradient
 
         self.dW = self.X.T @ d_out
         self.db = d_out.sum(axis=0)

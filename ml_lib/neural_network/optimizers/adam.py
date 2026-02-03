@@ -42,4 +42,4 @@ class Adam:
         layer.W -= self.lr * m_hat_dw / (np.sqrt(v_hat_dw) + self.eps)
         layer.b -= self.lr * m_hat_db / (np.sqrt(v_hat_db) + self.eps)
 
-                 
+# Used LLM in this code       

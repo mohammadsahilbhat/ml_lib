@@ -16,6 +16,6 @@ class RMSProp(Optimizer):
                 self.s[key]=np.zeros_like(params[key])
 
 
-                self.s[key]=self.beta*self.s[key]+(1-self.beta)*(grads[key]**2)
-                params[key]-= self.lr*grads[key]/(np.sqrt(self.s[key])+ self.eps)
+            self.s[key]=self.beta*self.s[key]+(1-self.beta)*(grads[key]**2)
+            params[key]-= self.lr*grads[key]/(np.sqrt(self.s[key])+ self.eps)
         

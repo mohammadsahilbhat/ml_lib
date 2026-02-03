@@ -29,7 +29,7 @@ class LinearRegression(BaseModel):
 
         n_samples, n_features = X.shape
 
-        # Initialize weights and bias
+        # Initialize weights and bias zero initialization for more convenicice
         self.W = np.zeros(n_features)
         self.b = 0.0
 
